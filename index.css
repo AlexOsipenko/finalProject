@@ -10,10 +10,11 @@ h1{
     line-height: 47px;
 }
 .main{
+    position: relative;
     display: flex;
     flex-direction: row;
     width: 800px;
-    margin: 15px 20%;
+    margin: 0 auto;
     flex-wrap: wrap;
     perspective: 600px;
 
