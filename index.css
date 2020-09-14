@@ -1,0 +1,213 @@
+body{
+    background-color: #cfd0cf;
+    color: #434344;
+}
+h1{
+    text-align: center;
+    margin-top: 40px;
+    font-family: Arial;
+    font-size: 42px;
+    line-height: 47px;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    margin: 15px 20%;
+    flex-wrap: wrap;
+    perspective: 600px;
+
+}
+.card{
+    height: 130px;
+    width: 130px;
+    background: linear-gradient(to top right, #22AB93, #19668D);
+    margin: 25px 25px ;
+    border: 5px solid white;
+    border-radius: 9px;
+    box-shadow: 1px 1px 5px 0px black;
+    backface-visibility: hidden;
+    z-index: 2;
+}
+.back{
+    padding-top: 10px;
+    height: 120px;
+    width: 130px;
+    margin: 25px 25px ;
+    border: 5px solid white;
+    border-radius: 9px;
+    box-shadow: 1px 1px 5px 0px black;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+    background-color: white;
+    text-align: center;
+    font-size: 75px;
+}
+.flip{
+    display: block;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.card:hover{
+    cursor: pointer;
+}
+
+.flip:active{
+    transform: rotateY(180deg);
+}
+#timer{
+    display: block;
+    font-family: Arial;
+    color: #434344;
+    font-size: 32px;
+    text-align: center;
+    line-height: 36px;
+    font-weight: bold;
+    position: relative;
+}
+#finalWindow{
+    display: none;
+    position: absolute;
+    top:50%;
+    left: 35%;
+    width: 350px;
+    height: 200px;
+    background-color: white;
+    z-index: 40;
+}
+#finalText{
+    position: absolute;
+    margin: 30px 110px 0 ;
+    font-size: 48px;
+    font-family: Arial;
+    font-weight: bold;
+}
+#finalWin{
+    display: flex;
+    width: 400px;
+    flex-direction: row;
+    position: absolute;
+    margin: 30px 140px 0 ;
+    font-size: 48px;
+    font-family: Arial;
+    font-weight: bold;
+}
+#button{
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 90px;
+    background: linear-gradient(to left, #22AB93, #19668D);
+    font-size: 20px;
+    color: white;
+    height: 40px;
+    padding: 0 30px 0 30px;
+    border-radius: 9px;
+    box-shadow: 1px 1px 1px 0px rgba(34, 60, 80, 0.2);
+    font-family: Arial;
+    font-weight: bold;
+}
+#plenka{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 30;
+    background-color: #434344;
+    opacity: 0.5;
+}
+#w {
+    animation-name: bounce;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+#i{
+    animation-name: bounce;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+#n{
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+#l{
+    animation-name: bounce;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+#o{
+    animation-name: bounce;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+#oo{
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+#s{
+    animation-name: bounce;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+#e{
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+@keyframes bounce {
+
+
+    15% {
+        transform:translateY(0);
+        padding-bottom: 5px;
+    }
+    30% {
+        transform:translateY(-50%);
+    }
+    40% {
+        transform:translateY(0%);
+        padding-bottom: 6px;
+    }
+    50% {
+        transform:translateY(-30%);
+    }
+    70% {
+        transform:translateY(0%);
+        padding-bottom: 7px;
+    }
+    80% {
+        transform:translateY(-15%);
+    }
+    90% {
+        transform:translateY(0%);
+        padding-bottom: 8px;
+    }
+    95% {
+        transform:translateY(-7%);
+    }
+    97% {
+        transform:translateY(0%);
+        padding-bottom: 9px;
+    }
+    99% {
+        transform:translateY(-3%);
+    }
+    100% {
+        transform:translateY(0);
+        padding-bottom: 9px;
+        opacity: 1;
+    }
+}
