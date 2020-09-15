@@ -1,6 +1,10 @@
+@font-face {
+    font-family: Simpsonfont;
+    src: url(Simpsonfont.otf);
+}
 body{
-    background-color: #cfd0cf;
-    color: #434344;
+    background-color: #0bc1f9;
+    color: #0bc1f9;
 }
 h1{
     text-align: center;
@@ -8,6 +12,8 @@ h1{
     font-family: Arial;
     font-size: 42px;
     line-height: 47px;
+    font-family: Simpsonfont;
+    color: #ffff22;
 }
 .main{
     position: relative;
@@ -22,7 +28,7 @@ h1{
 .card{
     height: 130px;
     width: 130px;
-    background: linear-gradient(to top right, #22AB93, #19668D);
+    background: linear-gradient(to top right, #fff799, #ffea00);
     margin: 25px 25px ;
     border: 5px solid white;
     border-radius: 9px;
@@ -65,8 +71,8 @@ h1{
 }
 #timer{
     display: block;
-    font-family: Arial;
-    color: #434344;
+    font-family: Simpsonfont;
+    color: #ffff22;
     font-size: 32px;
     text-align: center;
     line-height: 36px;
@@ -80,14 +86,14 @@ h1{
     left: 35%;
     width: 350px;
     height: 200px;
-    background-color: white;
+    background-color: #fcf281;
     z-index: 40;
 }
 #finalText{
     position: absolute;
     margin: 30px 110px 0 ;
     font-size: 48px;
-    font-family: Arial;
+    font-family: Simpsonfont;
     font-weight: bold;
 }
 #finalWin{
@@ -97,7 +103,7 @@ h1{
     position: absolute;
     margin: 30px 140px 0 ;
     font-size: 48px;
-    font-family: Arial;
+    font-family: Simpsonfont;
     font-weight: bold;
 }
 #button{
