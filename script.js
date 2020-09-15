@@ -68,7 +68,7 @@ function game() {
         clearInterval(timerInterval);
         clearTimeout(cancelTimer);
         document.getElementById('finalWindow').style.display = 'block';
-        document.getElementById('plenka').style.display = 'block';
+        document.querySelector('.plenka').style.display = 'block';
         document.getElementById('finalWin').style.display = 'flex';
     }
     allClose();
@@ -633,12 +633,12 @@ function game() {
     var cancelTimer = setTimeout(() => {
         clearInterval(timerInterval);
         document.getElementById('finalWindow').style.display = 'block';
-        document.getElementById('plenka').style.display = 'block';
+        document.querySelector('.plenka').style.display = 'block';
         document.getElementById('finalText').style.display = 'flex';
     }, 60000);
     document.getElementById('button').onclick = function () {
         document.getElementById('finalWindow').style.display = 'none';
-        document.getElementById('plenka').style.display = 'none';
+        document.querySelector('.plenka').style.display = 'none';
         clearInterval(timerInterval);
         sort();
         game();
